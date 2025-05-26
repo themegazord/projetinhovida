@@ -1,6 +1,6 @@
 <?php
 
-use App\Livewire\Welcome;
+use App\Livewire\Views\Dashboard;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', Welcome::class);
+Route::get('/', Dashboard::class);
