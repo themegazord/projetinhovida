@@ -8,6 +8,15 @@
   <title>{{ isset($title) ? $title . ' - ' . config('app.name') : config('app.name') }}</title>
 
   @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+  {{-- Flatpickr --}}
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="https://npmcdn.com/flatpickr/dist/l10n/pt.js"></script>
+
+  <script>
+    flatpickr.localize(flatpickr.l10ns.pt);
+  </script>
 </head>
 
 <body class="min-h-screen font-sans antialiased bg-base-200">
